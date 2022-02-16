@@ -1,0 +1,32 @@
+.max-width{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.absolute-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.collection-title{
+    font-size: 35px;
+    color: var(--heading-text);
+    margin-bottom: 32px;
+    font-weight: 500;
+}
+
+.slick-next:before,
+.slick-prev:before{
+    color: black;
+}
+
+.slick-next,.slick-prev{
+    top: 36%;
+    width: 25px;
+    height: 25px;
+}
