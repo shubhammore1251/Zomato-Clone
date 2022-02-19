@@ -30,7 +30,7 @@ const Collections = ({ list }) => {
                 <Slider {...settings}>
                     {list.map((item) => {
                         return (
-                            <div>
+                            <div key={item.id}>
                                 <div className="collection-cover">
                                     <img src={item.cover} alt={item.title} className="collection-img" />
 

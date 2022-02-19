@@ -15,7 +15,7 @@ const RestaurantCard = ({restaurant}) => {
     const offers = restaurant?.bulkOffers ?? [];
 
     const cuisines = restaurant?.info?.cuisine?.map((item)=> item.name).slice(0,3);
-
+    
     const bottomCont = restaurant?.bottomContainers;
 
     const goldOff = restaurant?.gold?.text;
@@ -23,7 +23,7 @@ const RestaurantCard = ({restaurant}) => {
     const proOff = offers.length >1 ? offers[0].text : null;
 
     const discount = offers.length>1 ? offers[1].text: offers.length ===1 ? offers[0].text: null;
-
+    
     return (
         <div className='explore-card cursor-pointer'>
            <div className="explore-card-cover">
@@ -42,7 +42,7 @@ const RestaurantCard = ({restaurant}) => {
            <div className="rest-row">
                 {cuisines.length && <div className="rest-cuisines">{cuisines.map((item,i)=>{
                     return (
-                        <span className='rest-cuisines-tag'>{item}{i!==cuisines.length-1 && ","}</span>
+                          <span className='rest-cuisines-tag' key={item}>{item}{i!==cuisines.length-1 && ","}</span>
                     )
                 })}
                 </div>}
