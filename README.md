@@ -1,5 +1,6 @@
-
 # Zomato UI Clone - Using React
+
+![Logo](./public/zomatoui.png)
 
 A Zomato UI Clone Using ReactJs
 
@@ -26,6 +27,7 @@ A Zomato UI Clone Using ReactJs
 **Npm packages:**  React Router,react-slick
 
 **React Hooks:**  useEffect,useState
+
 
 # Installation
 
